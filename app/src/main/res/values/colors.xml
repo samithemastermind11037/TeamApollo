@@ -10,4 +10,5 @@
 
     <color name="bg_purple">#AD90AC</color>
     <color name="bg_green">#94CA97</color>
+    <color name="bg_black">#2f2f2f</color>
 </resources>
