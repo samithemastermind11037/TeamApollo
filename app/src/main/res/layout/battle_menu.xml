@@ -23,18 +23,18 @@ tools:context=".BattleActivity">
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:alignLeft="true"
         android:text="@string/player_health"
         android:id="@+id/PHealthText"
+        android:layout_alignParentLeft="true"
         android:textSize="36sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:alignRight="true"
         android:text="@string/enemy_health"
         android:layout_toRightOf="@+id/PHealthText"
+        android:layout_alignParentRight="true"
         android:textSize="36sp" />
 
 </RelativeLayout>
@@ -50,17 +50,17 @@ tools:context=".BattleActivity">
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:alignLeft="true"
             android:text="Player Placeholder"
             android:id="@+id/PPlaceholder"
+            android:layout_alignParentLeft="true"
             android:textSize="36sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:alignRight="true"
             android:text="Enemy Placeholder"
+            android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/PPlaceholder"
             android:textSize="36sp" />
 
@@ -78,18 +78,18 @@ tools:context=".BattleActivity">
         android:layout_height="100dp"
         android:background="@color/bg_green"
         android:id="@+id/buttonAttack"
-        android:layout_margin="30dp"
+        android:layout_toLeftOf="@+id/buttonItem"
+        android:layout_marginRight="100dp"
         android:layout_centerVertical="true"
         android:text="Attack" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_toRightOf="@+id/buttonAttack"
         android:background="@color/bg_purple"
         android:id="@+id/buttonItem"
-        android:layout_margin="20dp"
         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:text="Item"/>
 
     <Button
@@ -98,7 +98,7 @@ tools:context=".BattleActivity">
         android:layout_toRightOf="@+id/buttonItem"
         android:background="@color/bg_purple"
         android:id="@+id/buttonRun"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="100dp"
         android:layout_centerVertical="true"
         android:text="Run"/>
 
